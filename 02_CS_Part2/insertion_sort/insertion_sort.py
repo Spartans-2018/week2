@@ -6,24 +6,6 @@ def insertion_sort(arr):
 	its left neighbor/s until a left value is less than the number. Swap indices 
 	for each comparison set in which left is greater than right. """
 
-	# create range of array length
-	index_range = range(0, len(arr))
-
-	# iterate through array by index
-	for index in index_range:  
-
-		number = arr[index] # number to be inserted
-
-		# if left neighbor is greater than number look through 
-		while arr[index-1] >= number and index > 0:
-
-			# swap left-right to right-left
-			arr[index-1], arr[index]  = number, arr[index-1]
-
-			# look left again
-			index -= 1
-
-	return arr
 
 
 assert insertion_sort([11,3,6,1,20,10, 100, 7]) == sorted([11,3,6,1,20,10, 100, 7])

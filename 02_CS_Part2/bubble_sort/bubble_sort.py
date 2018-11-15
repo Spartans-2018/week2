@@ -4,26 +4,6 @@
 def bubble_sort(list1):
 	""" sort list two-by-two until completely sorted """
 
-	index1 = range(0, len(list1)-1)
-
-	for x in index1:  # iterate through all items in list
-		for first_digit in index1:  # iterate the above iteration
-
-			second_digit = first_digit+1  # create
-
-
-			if list1[second_digit] < list1[first_digit]:
-				x = list1[first_digit]
-				list1[first_digit] = list1[second_digit]
-
-				list1[second_digit] = x
-
-			else:
-				list1[first_digit] = (list1[first_digit])
-				list1[second_digit] = list1[second_digit]
-
-
-	return (list1)
 
 
 

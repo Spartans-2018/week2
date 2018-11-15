@@ -13,26 +13,6 @@ def quicksort(array):
 	If no value is higher than the pivot, new pivot is left-most value
 	"""
 
-	if len(array) == 1 or len(array) == 0: # termination statement
-		return array
-
-	else:
-		left_array= []
-		right_array = []
-
-		# Take the first element as the pivot
-		pivot = array[0]
-
-		# Iterate from the second element to the end
-		# It's important that we leave out the index in the array that holds the pivot in this iteration
-		# otherwise the recursion won't work properly
-		for i in range(1, len(array)):
-			if array[i] < pivot:
-				left_array.append(array[i])
-			else:
-				right_array.append(array[i])
-
-		return quicksort(left_array) + [pivot] + quicksort(right_array)
 
 
 alist = [10, 20, 50, 30, 2, 5, 6,8,3,5,3,2,3,6,2,1,3,6,7,8,3,4]
