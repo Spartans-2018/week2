@@ -47,7 +47,7 @@ class Pet:
 class Dog(Pet):
 
     def __init__(self,name, age, fluffy):
-        Pet.__init__(self, name, age)
+        super().__init__(name, age)
         self.fluffy = fluffy
 
     def speak(self):
