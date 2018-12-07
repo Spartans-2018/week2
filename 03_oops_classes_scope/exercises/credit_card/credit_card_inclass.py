@@ -1,8 +1,8 @@
 class CreditCard:
     def __init__(self, card_number):
         self.card_number = card_number
-        self.card_type = "a string"
-        self.valid = 'a boolean'
+        self.card_type = ''
+        self.valid = bool()
 
 # Create and add your method called `determine_card_type` to the CreditCard class here:
     def determine_card_type(self):
