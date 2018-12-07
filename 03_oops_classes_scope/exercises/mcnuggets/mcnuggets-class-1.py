@@ -18,5 +18,8 @@ class McNuggets:
         #
 
 a=McNuggets(80)
+b=McNuggets(18)
 a.calc()
+b.calc()
 print (a.res)
+print (b.res)
