@@ -1,4 +1,4 @@
-class CeaserDecoder:
+class CaeserDecoder:
 
 
 
@@ -45,5 +45,14 @@ class CeaserDecoder:
     # d=coding ('aB]Z',2)
     # print (d)
 
-CeaserDecoder.coding ('zaAbc}Z.',2)
-CeaserDecoder.decoding('bcCde}B', 2)
+# CaeserDecoder.coding ('zaAbc}Z.',2)
+# CaeserDecoder.decoding('bcCde}B', 2)
+# CaeserDecoder.decoding('cde', 2)
+
+assert CaeserDecoder.decoding('cde', 2) == 'abc', 'cde - 2 should be abc'
+assert CaeserDecoder.coding('abc', 2)=='cde'
+assert CaeserDecoder.coding('!@#$%^&*()', 25)=='!@#$%^&*()'
+assert CaeserDecoder.decoding('!@#$%^&*()', 25)=='!@#$%^&*()'
+assert CaeserDecoder.decoding('CDE', 2) == 'ABC', 'CDE - 2 should be ABC'
+assert CaeserDecoder.decoding('XYZ', 1) == 'WXY', 'XYZ - 1 should be WXY'
+assert CaeserDecoder.coding('ABC', 1) == 'CDE', 'ABC +1  should be CDE'
